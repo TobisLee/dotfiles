@@ -71,4 +71,7 @@ map("v", ">", ">gv")
 -- Terminal
 -- map("n", "<leader>ft", Snacks.terminal)
 
+-- Nvim Tree
+map("n", "<leader>tt", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
+map("n", "<leader>tf", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer" })
 
