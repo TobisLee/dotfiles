@@ -1,8 +1,8 @@
-# common dotfiles
+# Common dotfiles
 
-This repo have the common part in my dotfiles.
+This repo contains the common parts of my dotfiles.
 
-## Requirement
+## Requirements
 1. Kitty
 2. Ghostty
 3. Tmux
@@ -10,7 +10,7 @@ This repo have the common part in my dotfiles.
 5. Neovim
 6. Fish
 
-For installing the requirements, use the `install-requirements.sh`
+To install the requirements, use `install-requirements.sh`.
 
-## Recover
-Run `link.sh` to recover the environment
+## Recovery
+Run `link.sh` to restore the environment.
