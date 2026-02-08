@@ -1,0 +1,7 @@
+theme = nord
+font-family = Roboto Mono
+font-family = PingFang SC
+font-size = 20
+font-style = Regular
+window-width = 80
+window-height = 24
