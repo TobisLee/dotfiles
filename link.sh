@@ -63,11 +63,24 @@ link_file() {
     create_symlink "$src" "$dest"
 }
 
-# link_file "git/config" "$HOME/.gitconfig"
 link_file "tmux/tmux.conf" "$HOME/.config/tmux/tmux.conf"
 link_file "ghostty/config" "$HOME/.config/ghostty/config"
 link_file "nvim/init.lua"  "$HOME/.config/nvim/init.lua"
-# link_file "fish"  "$HOME/.config/fish"
+link_file "fish/completions"  "$HOME/.config/fish/completions"
+link_file "fish/config.fish"  "$HOME/.config/fish/config.fish"
+link_file "fish/common.fish"  "$HOME/.config/fish/common.fish"
+link_file "fish/conf.d/common_abbrs.fish"  "$HOME/.config/fish/conf.d/common_abbrs.fish"
+
+# This condition is wrong, but use it for now
+if [[ "$(uname)" == "Darwin" ]]; then
+	link_file "../home_cfg/git/config" "$HOME/.gitconfig"
+	link_file "../home_cfg/fish/conf.d/home_abbrs.fish"  "$HOME/.config/fish/conf.d/home_abbrs.fish"
+	link_file "../home_cfg/fish/home.fish"  "$HOME/.config/fish/home.fish"
+	link_file "../home_cfg/fish/functions/fish_prompt.fish"  "$HOME/.config/fish/functions/fish_prompt.fish"
+else
+	# Work condition for now
+	echo "a"
+fi
 
 if [[ "$(uname)" != "Darwin" ]]; then
     # lazygit (Link to standard XDG location)
