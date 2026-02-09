@@ -1,4 +1,4 @@
-vim.cmd.colorscheme("onenord")
+vim.cmd.colorscheme("nord")
 
 vim.o.clipboard = "unnamedplus"
 
