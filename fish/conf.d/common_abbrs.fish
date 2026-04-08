@@ -12,3 +12,4 @@ abbr -a -- tnew tmux new -s
 abbr -a -- tatt tmux attach -t
 
 abbr -a -- oc opencode
+abbr -a -- cpt copilot
