@@ -10,3 +10,5 @@ abbr -a -- lt 'eza -lag --git --tree --level'
 abbr -a -- tls tmux ls
 abbr -a -- tnew tmux new -s
 abbr -a -- tatt tmux attach -t
+
+abbr -a -- oc opencode
